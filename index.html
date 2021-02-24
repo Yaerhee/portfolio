@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaerhee's Portfolio</title>
+    <meta name="description" content="Portfolio for Yaerhee" />
+    <meta name="author" content="Yaerhee" />
+
+    <!-- Icon, CSS rel -->
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&display=swap"
+        rel="stylesheet" />        
+    <link rel="stylesheet" href="./data/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./data/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./data/css/slick-theme.css"/>
+
+    <!-- Script src -->
+    <script src="https://kit.fontawesome.com/d09f68f575.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./data/js/HTMLinclude.js"></script>
+    <script src="./data/js/main.js" defer></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./data/js/slick.min.js"></script>
+
+
+    <!-- snow -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Snow('#snow', {
+                number: 15,
+                r: 2.5,
+                v: 0.8
+            });
+        });
+    </script>
+    <script src="./data/js/snow.js"></script>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header></header>
+        <nav id="navbar">
+            <div class="navbar__logo">
+               <i class="fa fa-home" data-link="#home"></i></a>
+            </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__menu__item" data-link="#about">
+                        About</a>
+                    </li>
+                    <li class="navbar__menu__item" data-link="#skills">
+                        Skills</a>
+                    </li>
+                    <li class="navbar__menu__item" data-link="#projects">
+                        Projects</a>
+                    </li>
+                    <li class="navbar__menu__item" data-link="#contact">
+                        Contact</a>
+                    </li>
+                </ul>
+
+            <button class="navbar__toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="home__container">
+            <h1 class="home__title">Yaerhee Lee</h1>
+            <h2 class="home__description">Software Engineer * Yongin, South Korea</h2>
+            <a href="http://www.github.com/yaerhee" target="_blank">
+                <i class="fa fa-github"></i></a>
+            <i class="fa fa-briefcase" data-link="#projects"></i>
+            <i class="fa fa-user" data-link="#contact"></i>
+            </a>
+        </div>    
+    </section>
+
+    <!-- other menu pages to include -->
+    <div data-include-path="./pages/about.html"></div>
+    <div data-include-path="./pages/skills.html"></div>
+    
+     <!-- Work -->
+     <section id="projects" class="section">
+        <div class="section__container__project">
+            <h1>Projects</h1>
+            <h2>1. Cyworld Clone Project</h2>
+            <script>
+                $(document).ready(function(){
+                    $('.cyworld').slick({
+                        dots: true,
+                        infinite: true,
+                        speed: 500,
+                        fade: true,
+                        cssEase: 'linear',
+            
+                    });
+            
+                    $('.cyworld').slick('slickRemove', 0);
+            
+                });
+            
+                function cylists() {
+                   for(var i=1; i<26; i++) {
+                        var ArrayList = [];
+            
+                        ArrayList[i-1] =
+                        document.write("<div><img class='slides' src='./data/img/projects/cyworld/"
+                        +i+".png' /></div>");
+                    }
+                }
+            </script>
+             
+            <div class="cyworld">
+                <script>cylists();</script>
+            </div>
+            
+            <h4></h4>
+
+            <h2>2. Goobnemall Clone Project</h2>
+            <script>
+                $(document).ready(function(){
+                    $('.goobne').slick({
+                        dots: true,
+                        infinite: true,
+                        speed: 500,
+                        fade: true,
+                        cssEase: 'linear',
+            
+                    });
+            
+                    $('.goobne').slick('slickRemove', 0);
+            
+                });
+            
+                function gnlists() {
+                   for(var i=1; i<17; i++) {
+                        var ArrayList = [];
+            
+                        ArrayList[i-1] =
+                        document.write("<div><img class='slides' src='./data/img/projects/goobne/"
+                        +i+".png' /></div>");
+                    }
+                }
+            </script>
+             
+            <div class="goobne">
+                <script>gnlists();</script>
+            </div>
+        </div>
+        
+    </section>
+
+    <div id="snow">
+        <div data-include-path="./pages/contact.html"></div>
+    </div>
+
+    <!-- Arrows -->
+    <button class="arrow-up">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/EfgAd6iHApE?autoplay=1&loop=1&playlist=EfgAd6iHApE"
+        autoplay="1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+    </iframe>
+
+</body>
+
+</html>
