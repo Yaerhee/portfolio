@@ -9,7 +9,8 @@
     --font-medium: 28px;
     --font-medium-mobile: 20px;
     --font-regular: 18px;
-    --font-regular-mobile: 16px;
+    --font-regular-mobile: 15px;
+    --font-regular2-mobile: 13px;
     --font-small: 16px;
     --font-small-mobile: 12px;
     --font-smaller-mobile: 13px;
@@ -565,14 +566,14 @@ footer {
     }
 
     .about__me2 {
-        font-size: var(--font-regular-mobile);
+        font-size: var(--font-regular2-mobile);
     }
 
     .fa-github, .fa-phone-square {
         width: 55px;
         height: 55px;
         line-height: 55px;
-        font-size: 50px;
+        font-size: 45px;
         margin: 8px;
         color: white;
     }
