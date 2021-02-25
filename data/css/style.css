@@ -5,9 +5,13 @@
     font-family: 'Noto Serif KR', serif;
 
     --font-large: 48px;
+    --font-large-mobile: 35px;
     --font-medium: 28px;
+    --font-medium-mobile: 20px;
     --font-regular: 18px;
+    --font-regular-mobile: 16px;
     --font-small: 16px;
+    --font-small-mobile: 12px;
     --font-micro: 14px;
 
     /* Font Weight */
@@ -495,6 +499,23 @@ footer {
    pointer-events: auto;
 }
 
+.slick-dots
+{
+    position: relative;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+
+
 /* responsive layout settings */
 /* for Mobile screen (Portrait) */
 @media (min-width: 320px) and (max-width: 480px) {
@@ -505,6 +526,72 @@ footer {
         text-align: center;
     }
 
+    p {
+        font-size: var(--font-regular-mobile);
+        font-weight: var(--font-regular-mobile);
+        color: black;
+        margin: 8px 0;
+    }
+
+    h1 {
+        font-size: var(--font-large-mobile);
+        font-weight: bold;
+        color: black;
+        margin: 16px 0px;
+    }
+    
+    h2 {
+        font-size: var(--font-medium-mobile);
+        font-weight: var(--weight-semi-bold);
+        color: black;
+        margin: 8px 0;
+    }
+    
+    h3 {
+        font-size: var(--font-regular-mobile);
+        font-weight: var(--font-regular-mobile);
+        color: black;
+        margin: 8px 0;
+    }
+    
+    h4 {
+        padding-bottom: 50px;
+    }
+
+    .about__me2 {
+        font-size: var(--font-regular-mobile);
+    }
+
+    .fa-github, .fa-phone-square {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 50px;
+        margin: 10px;
+        color: white;
+    }
+
+    .fa-briefcase, .fa-user {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 40px;
+        margin: 10px;
+        color: white;
+    }
+
+    .fa-envelope {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 45px;
+        margin: 10px;
+        color: white;
+    }
+
+    .contact__thanks {
+        font-size: var(--font-medium-mobile);
+    }
 }
 
 /* for Mobile screen (Landscape) */
