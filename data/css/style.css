@@ -496,6 +496,28 @@ footer {
 }
 
 /* responsive layout settings */
+/* for Mobile screen (Portrait) */
+@media (min-width: 320px) and (max-width: 480px) {
+    #home {
+        background-attachment: scroll;
+        padding: 0px;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+}
+
+/* for Mobile screen (Landscape) */
+@media (min-width: 481px) and (max-width:767px) {
+    #home {
+        background-attachment: scroll;
+        padding: 0px;
+        padding-top: 100px;
+        text-align: center;
+    }
+}
+
+/* for Tablet & smaller screen for PC */
 @media screen and (max-width: 768px) {
     .navbar__toggle-btn {
         display: block;
