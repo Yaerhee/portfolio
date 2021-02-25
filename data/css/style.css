@@ -12,6 +12,7 @@
     --font-regular-mobile: 16px;
     --font-small: 16px;
     --font-small-mobile: 12px;
+    --font-smaller-mobile: 13px;
     --font-micro: 14px;
 
     /* Font Weight */
@@ -486,6 +487,7 @@ footer {
     width: 70px;
     height: 70px;
     font-size: 50px;
+    padding: 0px;
     color: white;
     background-color: gray;
     border-radius: 50%;
@@ -526,6 +528,10 @@ footer {
         text-align: center;
     }
 
+    .home__description {
+        font-size: var(--font-regular-mobile);
+    }
+
     p {
         font-size: var(--font-regular-mobile);
         font-weight: var(--font-regular-mobile);
@@ -563,30 +569,34 @@ footer {
     }
 
     .fa-github, .fa-phone-square {
-        width: 80px;
-        height: 80px;
-        line-height: 80px;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
         font-size: 50px;
         margin: 10px;
         color: white;
     }
 
     .fa-briefcase, .fa-user {
-        width: 80px;
-        height: 80px;
-        line-height: 80px;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
         font-size: 40px;
         margin: 10px;
         color: white;
     }
 
     .fa-envelope {
-        width: 80px;
-        height: 80px;
-        line-height: 80px;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
         font-size: 45px;
         margin: 10px;
         color: white;
+    }
+
+    .skill__description {
+        font-size: var(--font-smaller-mobile);
     }
 
     .contact__thanks {
