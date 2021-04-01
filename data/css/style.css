@@ -206,7 +206,7 @@ footer {
         linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), 
         url(../img/tree.jpg) center/cover no-repeat;
     background-attachment: scroll;
-    padding: 200px;
+    padding: 190px;
     text-align: center;
 }
 
