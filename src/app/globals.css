@@ -20,3 +20,22 @@ body {
   background-size: cover;
   z-index: -1;
 }
+
+.row {
+  width: 33.33%;
+}
+
+.row-content {
+  justify-content: center;
+  flex-flow: row nowrap;
+  width: 100%;
+  margin: 0 auto;
+  gap: 2rem;
+  align-items: center;
+  opacity: 0.8;
+  max-width: 16rem;
+}
+
+.react-icons {
+  font-size: 40px;
+}
