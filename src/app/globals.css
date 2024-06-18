@@ -21,12 +21,31 @@ body {
   z-index: -1;
 }
 
+.header-item {
+  font-size: 24px;
+  font-weight: 500;
+}
+
 .row {
   width: 33.33%;
 }
 
+.skill-box {
+  background-color: #fff;
+  border: 1px solid var(--chakra-colors-orange-100);
+  border-radius: 2rem;
+
+  position: relative;
+  top: 0;
+  transition: ease 0.5s;
+}
+
+.skill-box:hover {
+  top: -10px;
+}
+
 .row-content {
-  justify-content: center;
+  justify-content: flex-start;
   flex-flow: row nowrap;
   width: 100%;
   margin: 0 auto;
@@ -34,8 +53,47 @@ body {
   align-items: center;
   opacity: 0.8;
   max-width: 16rem;
+  padding: 2rem 0 2rem 0;
+
+  height: 130px;
+}
+
+#skills-row-box > .row {
+  width: 30%;
+}
+
+.skill-box .row-content {
+  align-items: center;
+  gap: 1rem;
+  height: max-content;
+  opacity: 1;
 }
 
 .react-icons {
   font-size: 40px;
+}
+
+.header--white {
+  background-color: var(--chakra-colors-orange-50) !important;
+  color: rgba(0, 0, 0, 0.8) !important;
+  z-index: 999;
+
+  transition: ease 0.2s;
+}
+
+#header {
+  transition: ease 0.2s;
+}
+
+#about, #skills, #projects {
+  max-width: 71.25rem;
+  padding: 1.5rem 2rem;
+}
+
+.project-box {
+  background-color: #fff;
+  border: 1px solid var(--chakra-colors-orange-100);
+  border-radius: 2rem;
+
+  position: relative;
 }

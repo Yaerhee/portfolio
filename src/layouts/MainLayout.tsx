@@ -5,7 +5,7 @@ import {Flex} from "@chakra-ui/react";
 const MainLayout = ({ children }: { children: ReactNode }) => {
   return (
     <>
-        <Flex w="full" h="full" flexDirection="column">
+        <Flex w="full" h="full" flexDirection="column" userSelect="none">
             <Header />
             {children}
         </Flex>
