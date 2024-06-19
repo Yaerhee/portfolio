@@ -2,12 +2,10 @@ import { Box, Divider, Flex, Heading, Text, Image } from '@chakra-ui/react'
 
 const Skills = () => {
   return (
-    <Box bgGradient='linear(to-b, orange.50, orange.200)'>
-      <
-        Flex id='skills' w='full' p={10} flexDirection='column'
+    <Box id="skills" bgGradient='linear(to-b, orange.50, orange.200)' pt={20}>
+      <Flex id='skills-container' w='full' p={10} flexDirection='column'
              justifyContent='center' alignItems='center' m='0 auto'
-             maxW='71.25rem'
-      >
+             maxW='71.25rem'>
         <Heading fontWeight='900' fontSize='3.5rem' pt={8} pb={4}>Skills
           <Divider mt={4} mb={6} borderWidth='3px' borderColor='orange.300' />
         </Heading>

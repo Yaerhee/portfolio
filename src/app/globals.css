@@ -7,6 +7,10 @@ body {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .profile-content::before {
   position: absolute;
   content: '';
@@ -85,7 +89,7 @@ body {
   transition: ease 0.2s;
 }
 
-#about, #skills, #projects, #career {
+#about-container, #skills-container, #projects-container, #career-container {
   max-width: 71.25rem;
   padding: 1.5rem 2rem;
 }
@@ -100,4 +104,27 @@ body {
 
 .chakra-text {
   word-break: break-word;
+}
+
+
+/* scroll */
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
+  padding: 0px;
+  color: white;
+  background-color: gray;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease-in;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
 }

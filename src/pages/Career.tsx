@@ -4,8 +4,8 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 const Career = () => {
   const TaskIcon = chakra(GrTask)
   return (
-    <Box bgGradient='linear(to-b, orange.400, orange.100)'>
-      <Flex id="career" w="full" flexDirection="column" justifyContent="center" alignItems="center" m="0 auto">
+    <Box id="career" bgGradient='linear(to-b, orange.400, orange.100)' pt={20}>
+      <Flex id="career-container" w="full" flexDirection="column" justifyContent="center" alignItems="center" m="0 auto">
         <Heading fontWeight="900" fontSize="3.5rem" pt={8} pb={4}>Career
           <Divider mt={4} mb={6} borderWidth='3px' borderColor='orange.600' />
         </Heading>

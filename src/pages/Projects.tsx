@@ -5,14 +5,14 @@ const Projects = () => {
   const CheckCircleIcon = chakra(MdCheckCircle)
   const SettingsIcon = chakra(MdSettings)
   return (
-    <Box bgGradient='linear(to-b, orange.200, orange.400)'>
-      <Flex id='projects' w='full' flexDirection='column' justifyContent='center' alignItems='center' m='0 auto'>
+    <Box id="projects" bgGradient='linear(to-b, orange.200, orange.400)' pt={20}>
+      <Flex id='projects-container' w='full' flexDirection='column' justifyContent='center' alignItems='center' m='0 auto'>
         <Heading fontWeight='900' fontSize='3.5rem' pt={8} pb={4}>Projects
           <Divider mt={4} mb={6} borderWidth='3px' borderColor='orange.500' />
         </Heading>
         <Flex w='full' justifyContent='center' flexDirection='column' gap={12} pb={8}>
           {/* first Project */}
-          <Box className='project-box' bgColor='white' boxShadow='2xl'>
+          <Box className='project-box' bgColor='white' boxShadow='2xl' my={4}>
             <Flex w='full' p={8} m='0 auto' flexDirection='column' alignItems='center' gap={4}>
               <Flex flexDirection='column' alignItems='center'>
                 <Text fontSize='28px' fontWeight='bold'>포트폴리오 웹 사이트 (renewal)</Text>

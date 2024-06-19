@@ -1,6 +1,8 @@
 'use client'
-import {Box, Flex, Heading, Text} from '@chakra-ui/react'
+import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react'
 import { useEffect, useRef } from 'react'
+import Link from 'next/link'
+import { scrollIntoPage } from '@/ts/util'
 
 const Header = () => {
   const headerRef = useRef<HTMLDivElement | null>(null);
@@ -32,18 +34,18 @@ const Header = () => {
         <Flex w="full" maxW="71.25rem" p="1.25rem 2rem" m="0 auto" justifyContent="space-between" alignItems="center">
             <Heading>Yaerhee's Portfolio</Heading>
             <Flex float="right" gap={10}>
-                <Box>
-                    <Text className="header-item">About</Text>
-                </Box>
-                <Box>
+                <button onClick={() => scrollIntoPage('#about')}>
+                  <Text className="header-item">About</Text>
+                </button>
+                <button onClick={() => scrollIntoPage('#skills')}>
                     <Text className="header-item">Skills</Text>
-                </Box>
-                <Box>
+                </button>
+                <button onClick={() => scrollIntoPage('#projects')}>
                     <Text className="header-item">Projects</Text>
-                </Box>
-                <Box>
+                </button>
+                <button onClick={() => scrollIntoPage('#career')}>
                     <Text className="header-item">Career</Text>
-                </Box>
+                </button>
             </Flex>
         </Flex>
     </Flex>

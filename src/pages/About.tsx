@@ -8,10 +8,9 @@ const About = () => {
   const PhoneIcon = chakra(FaPhone)
   const MailIcon = chakra(FaEnvelope)
   const PencilIcon = chakra(FaPencil)
-  const BriefCaseIcon = chakra(FaBriefcase)
     return (
-      <Box bgColor="orange.50">
-        <Flex id="about" w="full" flexDirection="column" justifyContent="center" alignItems="center" m="0 auto">
+      <Box id="about" bgColor="orange.50" pt={10}>
+        <Flex id="about-container" w="full" flexDirection="column" justifyContent="center" alignItems="center" m="0 auto">
         <Heading fontWeight="900" fontSize="3.5rem" pt={8} pb={4}>About
           <Divider mt={4} mb={6} borderWidth='3px' borderColor='orange.200' />
         </Heading>
@@ -83,9 +82,6 @@ const About = () => {
             </Flex>
           </Box>
         </Flex>
-        {/*<Flex>*/}
-        {/*  <BriefCaseIcon boxSize="40px" />*/}
-        {/*</Flex>*/}
       </Flex>
       </Box>
     )
