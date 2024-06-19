@@ -11,9 +11,7 @@ const About = () => {
   const BriefCaseIcon = chakra(FaBriefcase)
     return (
       <Box bgColor="orange.50">
-        <Flex id="about" w="full" flexDirection="column" justifyContent="center" alignItems="center" m="0 auto"
-          // bgGradient='linear(to-b, orange.50, orange.200 90%)'>
-                 >
+        <Flex id="about" w="full" flexDirection="column" justifyContent="center" alignItems="center" m="0 auto">
         <Heading fontWeight="900" fontSize="3.5rem" pt={8} pb={4}>About
           <Divider mt={4} mb={6} borderWidth='3px' borderColor='orange.200' />
         </Heading>

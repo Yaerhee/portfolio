@@ -85,7 +85,7 @@ body {
   transition: ease 0.2s;
 }
 
-#about, #skills, #projects {
+#about, #skills, #projects, #career {
   max-width: 71.25rem;
   padding: 1.5rem 2rem;
 }
@@ -96,4 +96,8 @@ body {
   border-radius: 2rem;
 
   position: relative;
+}
+
+.chakra-text {
+  word-break: break-word;
 }

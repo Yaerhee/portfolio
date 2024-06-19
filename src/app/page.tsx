@@ -5,6 +5,7 @@ import About from '@/pages/About'
 import { ChevronDownIcon } from '@chakra-ui/icons'
 import Skills from '@/pages/Skills'
 import Projects from '@/pages/Projects'
+import Career from '@/pages/Career'
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         <About />
         <Skills />
         <Projects />
+        <Career />
       </MainLayout>
     </main>
   )
