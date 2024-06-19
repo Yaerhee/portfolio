@@ -17,11 +17,7 @@ const Projects = () => {
   const CheckCircleIcon = chakra(MdCheckCircle)
   const SettingsIcon = chakra(MdSettings)
   return (
-    <Box
-      id="projects"
-      bgGradient="linear(to-b, orange.400, orange.100)"
-      pt={10}
-    >
+    <Box id="projects" pt={10}>
       <Flex
         id="projects-container"
         w="full"
@@ -42,7 +38,7 @@ const Projects = () => {
           pb={8}
         >
           {/* first Project */}
-          <Box className="project-box" bgColor="white" boxShadow="l" my={4}>
+          <Box className="project-box" bgColor="white" boxShadow="2xl" my={4}>
             <Flex
               w="full"
               p={8}
@@ -70,7 +66,10 @@ const Projects = () => {
                 justifyContent="space-between"
                 alignItems="center"
               >
-                <Image alt="first-portfolio" src="/first_portfolio.png" />
+                <Image
+                  alt="first-portfolio"
+                  src="/portfolio/first_portfolio.png"
+                />
                 <Flex w="full" px={4} my={6} flexDirection="column" gap={4}>
                   <Text fontSize="18px">
                     두 번째로 제작한 포트폴리오 웹 사이트 입니다. 현재 보고 계신
@@ -165,7 +164,7 @@ const Projects = () => {
                 <Image
                   w="full"
                   alt="second-portfolio"
-                  src="/second_portfolio.png"
+                  src="/portfolio/second_portfolio.png"
                 />
                 <Flex
                   w="full"

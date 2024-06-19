@@ -15,7 +15,7 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 const Career = () => {
   const TaskIcon = chakra(GrTask)
   return (
-    <Box id="career" bgGradient="linear(to-b, orange.200, orange.400)" pt={10}>
+    <Box id="career" pt={10}>
       <Flex
         id="career-container"
         w="full"

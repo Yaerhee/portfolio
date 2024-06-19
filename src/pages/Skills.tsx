@@ -2,7 +2,7 @@ import { Box, Divider, Flex, Heading, Text, Image } from '@chakra-ui/react'
 
 const Skills = () => {
   return (
-    <Box id="skills" bgGradient="linear(to-b, orange.50, orange.200)" pt={10}>
+    <Box id="skills" pt={10}>
       <Flex
         id="skills-container"
         w="full"
@@ -35,7 +35,10 @@ const Skills = () => {
                 Frontend
               </Text>
               <Divider borderWidth="1.5px" borderColor="orange.200" />
-              <Image alt="frontend-skills" src="/frontend_skills.png" />
+              <Image
+                alt="frontend-skills"
+                src="/portfolio/frontend_skills.png"
+              />
             </Flex>
           </Box>
           <Box
@@ -48,7 +51,7 @@ const Skills = () => {
                 Backend
               </Text>
               <Divider borderWidth="1.5px" borderColor="orange.200" />
-              <Image alt="backend-skills" src="/backend_skills.png" />
+              <Image alt="backend-skills" src="/portfolio/backend_skills.png" />
             </Flex>
           </Box>
           <Box
@@ -61,7 +64,11 @@ const Skills = () => {
                 Other Skills
               </Text>
               <Divider borderWidth="1.5px" borderColor="orange.200" />
-              <Image alt="other-skills" src="/other_skills.png" mt={4} />
+              <Image
+                alt="other-skills"
+                src="/portfolio/other_skills.png"
+                mt={4}
+              />
             </Flex>
           </Box>
         </Flex>

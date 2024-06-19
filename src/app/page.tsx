@@ -1,13 +1,11 @@
 'use client'
 import MainLayout from '@/layouts/MainLayout'
-import { Button, chakra, Divider, Flex, Heading, Text } from '@chakra-ui/react'
+import { Button, Divider, Flex, Heading, Text } from '@chakra-ui/react'
 import About from '@/pages/About'
 import { ChevronDownIcon } from '@chakra-ui/icons'
 import Skills from '@/pages/Skills'
 import Projects from '@/pages/Projects'
 import Career from '@/pages/Career'
-import { FaArrowUp } from 'react-icons/fa6'
-import { useEffect, useRef } from 'react'
 import { scrollIntoPage } from '@/ts/util'
 
 export default function Home() {
