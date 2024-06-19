@@ -41,7 +41,7 @@ html {
 
   position: relative;
   top: 0;
-  transition: ease 0.5s;
+  transition: ease 0.1s;
 }
 
 .skill-box:hover {
@@ -62,15 +62,14 @@ html {
   height: 130px;
 }
 
-#skills-row-box > .row {
-  width: 30%;
-}
-
 .skill-box .row-content {
   align-items: center;
   gap: 1rem;
   height: max-content;
   opacity: 1;
+
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .react-icons {
@@ -106,25 +105,27 @@ html {
   word-break: break-word;
 }
 
-
-/* scroll */
-.arrow-up {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  width: 70px;
-  height: 70px;
-  font-size: 50px;
-  padding: 0px;
-  color: white;
-  background-color: gray;
-  border-radius: 50%;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 300ms ease-in;
+.home-button {
+  transition: ease-in 0.2s;
 }
 
-.arrow-up.visible {
-  opacity: 1;
-  pointer-events: auto;
+.home-button:hover {
+  color: var(--chakra-colors-orange-400);
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none !important;
+  }
+
+  .header-clicked {
+    flex-direction: column !important;
+  }
+
+  .nav-clicked {
+    display: flex !important;
+    align-items: flex-start;
+    padding: 1rem 2rem 1rem 2rem;
+    gap: 15px !important;
+  }
 }
